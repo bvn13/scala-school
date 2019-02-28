@@ -142,7 +142,7 @@ object Lecture4 extends App {
 //  }
 
   def range2(from: Int, to: Int): EvenList[Int] =
-    if (from >= to - 1) EvenNil()
+    if (from > to - 1) EvenNil()
     else EvenCons(from, from + 1, range2(from + 2, to))
 //  {
 //    def go(to: Int, acc: EvenList[Int]): EvenList[Int] =
